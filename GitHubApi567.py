@@ -1,3 +1,9 @@
+language: python
+python:
+  - "3.5"
+install:
+  - pip install requests
+
 import json
 import requests
 """
@@ -63,3 +69,8 @@ if __name__ == '__main__':
     for repo in user_api_commits(username):
         print ("Repo: %(name)s Number %(num_commits)d  of commits." % repo)
         
+language: python
+python:
+  - "3.5"
+install:
+  - pip install requests
